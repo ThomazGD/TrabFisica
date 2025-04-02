@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+            <ul>
+                <img src="img/logo.png" alt="">
+                <li><a href="#onelaw">1 Lei De Ohm</a></li>
+                <li><a href="#secondlaw">2 Lei De Ohm</a></li>
+                <li><a href="#thirdlaw">Calculo De Potencia Eletrica</a></li>   
+                <li><a href="#minigame_id">Minigame</a></li>   
+            </ul>
+    </header>
+    <div class="container2">
+        <div class="container-ohm">
+            <h2>Quem foi George Simon Ohm?</h2>
+            <img src="img/ohm.jpg" alt="George Simon Ohm">
+            <p>George Simon Ohm (1789-1854) foi um físico e matemático alemão que fez contribuições fundamentais para o estudo da eletricidade. Nascido em Erlangen, na Baviera, ele começou sua carreira como professor de matemática e posteriormente dedicou-se à pesquisa em eletricidade.</p>            
+            <p>Sua descoberta mais importante foi a relação matemática entre corrente elétrica, tensão e resistência, que ficou conhecida como Lei de Ohm. Esta lei foi publicada em 1827 em seu trabalho "A Lei Galvânica Matematicamente Elaborada". Inicialmente, suas descobertas não foram bem aceitas pela comunidade científica, mas com o tempo, sua importância foi reconhecida.</p>
+            <p>Em sua homenagem, a unidade de medida de resistência elétrica no Sistema Internacional de Unidades (SI) recebeu o nome de "ohm" (Ω). Suas contribuições revolucionaram nossa compreensão dos circuitos elétricos e formaram a base para o desenvolvimento da engenharia elétrica moderna.</p>
+        </div>
+    </div>
+    <section id="onelaw" class="container3">
+    <div class="onelawohm" >
+
+        <h1>1ª Lei De Ohm</h1>
+        <p>A 1ª Lei de Ohm é uma das leis fundamentais da eletricidade. Ela relaciona a tensão (V), a corrente (I) e a resistência (R) em um circuito elétrico. A lei afirma que a corrente elétrica que flui através de um condutor é diretamente proporcional à tensão aplicada e inversamente proporcional à resistência do condutor.</p>
+        <p>A fórmula da 1ª Lei de Ohm é:</p>
+        <img src="img/formula.png" alt="Fórmula da 1ª Lei de Ohm">
+        <p>U = R * I</p>
+        <p>Onde:</p>
+        <p>U = Tensão (em volts)</p>
+        <p>R = Resistência (em ohms)</p>
+        <p>I = Corrente (em amperes)</p>
+    
+    </div>
+    <div class="example1">
+        <h2>Exemplo de aplicação:</h2>
+    <p>1) Um resistor ôhmico, de resistência igual a 10 Ω, é atravessado por uma corrente elétrica de 1,0 A. Determine a queda de potencial que uma corrente elétrica sofre ao passar por esse resistor e assinale a alternativa correspondente:</p>
+    <p>Alternativas:</p>
+    <p>a) 5 V</p>
+    <p>b) 25 V</p>
+    <p>c) 15 V</p>
+    <p>d) 20 V</p>
+    <p>e) 10 V </p>
+    <div class="resolucao"><div id="solucao" class="solucao" style="display:none;">
+            <img src="img/resolução1.png" alt="Resolução do exercício">
+        </div>
+        <button onclick="toggleResolucao()" class="btn-resolucao">Resolução</button>
+        
+    </div>
+    </div>
+</section>
+<section id="secondlaw" class="container4">
+    
+    <div class="onelawohm" >
+        
+        <h1>2ª Lei De Ohm</h1>
+    <p>A 2ª Lei de Ohm, também conhecida como Lei da Resistividade, estabelece a relação entre a resistência elétrica de um condutor e suas características físicas. Esta lei mostra que a resistência de um condutor depende do seu comprimento, área da seção transversal e do material do qual é feito.</p>
+    <p>A fórmula da 2ª Lei de Ohm é:</p>
+    <img src="img/formula2.png" alt="Fórmula da 2ª Lei de Ohm">
+    <p>Onde:</p>
+    <p>R = Resistência (em ohms)</p>
+    <p>ρ = Resistividade do material (em Ω.m)</p>
+    <p>L = Comprimento do condutor (em metros)</p>
+    <p>A = Área da seção transversal (em m²)</p>
+    
+    </div>
+    <div class="example1">
+        <h2>Exemplo de aplicação:</h2>
+        <p>2) A linha de transmissão que leva energia elétrica da caixa de relógio até uma residência consiste de dois fios de cobre com 10,0 m de comprimento e secção reta com área 4,0 mm2 cada um. Considerando que a resistividade elétrica do cobre é ρ=1,6∙10-8Ω∙m, calcule a resistência elétrica r de cada fio desse trecho do circuito.</p>
+        <p>Alternativas:</p>
+        <p>a) 0,01 Ω</p>
+        <p>b) 0,02 Ω</p>
+        <p>c) 0,03 Ω</p>
+        <p>d) 0,04 Ω</p>
+        <p>e) 0,05 Ω</p>
+        <div class="resolucao"><div id="solucao2" class="solucao" style="display:none;">
+                <img src="img/resolução2.png" alt="Resolução do exercício">
+            </div>
+            <button onclick="toggleResolucao2()" class="btn-resolucao">Resolução</button>
+            
+        </div>
+    </div>
+    </div>
+
+</section>
+    <section id="thirdlaw" class="container5">
+    <div class="thirdlawohm">
+        <h1>Cálculo da potência elétrica pela lei de Ohm</h1>
+        <p>Por meio da lei de Ohm, é possível determinar a potência elétrica que é dissipada por um resistor. Tal dissipação de energia ocorre em razão do efeito Joule, por isso, ao calcularmos a potência dissipada, estamos determinando a quantidade de energia elétrica que um resistor é capaz de converter em calor, a cada segundo.</p>
+        <p>Existem algumas fórmulas que podem ser usadas para calcular a potência elétrica, confira algumas delas:</p>
+        <img src="img/formula3.png" alt="Fórmula da 3ª Lei de Ohm">
+        <p>Onde:</p>
+        <p>P = Potência elétrica (em watts)</p>
+        <p>E = Energia (em jaules)</p>
+        <p>Δt – Intervalo de tempo (s)</p>
+        <p>R = Resistência elétrica (em ohms)</p>
+        <p>i = Corrente elétrica (em ampères)</p>
+        <p>U = Tensão elétrica (em volts)</p>
+
+    </div>
+    </section>
+    <section id="minigame_id" class="minigame">
+        <div class="container6">
+            <h1>Calculadora & Leis de Ohm e Potencial Elétrico</h1>
+            
+            <label for="calculo">Escolha um cálculo:</label>
+            <select id="calculo" onchange="mostrarFormulario()">
+                <option value="lei1">Primeira Lei de Ohm (V = I × R)</option>
+                <option value="lei2">Segunda Lei de Ohm (R = ρ × L / A)</option>
+                <option value="potencial">Cálculo do Potencial Elétrico</option>
+            </select>
+    
+            <div id="formulario"></div>
+            
+            <div id="resultado"></div>
+        </div>
+    </section>
+</body>
+<script>
+    function toggleResolucao() {
+        var solucao = document.getElementById("solucao");
+        if (solucao.style.display === "none") {
+            solucao.style.display = "block";
+        } else {
+            solucao.style.display = "none";
+        }
+    }
+    function toggleResolucao2() {
+        var solucao2 = document.getElementById("solucao2");
+        if (solucao2.style.display === "none") {
+            solucao2.style.display = "block";
+        } else {
+            solucao2.style.display = "none";
+        }
+    }
+
+    //MiniGame
+    function mostrarFormulario() {
+    let tipo = document.getElementById("calculo").value;
+    let formulario = document.getElementById("formulario");
+
+    if (tipo === "lei1") {
+        formulario.innerHTML = `
+            <label for="voltage">Tensão (V):</label>
+            <input type="number" id="voltage" placeholder="Digite a tensão">
+            
+            <label for="resistance">Resistência (Ω):</label>
+            <input type="number" id="resistance" placeholder="Digite a resistência">
+            
+            <label for="current">Corrente (A) (Sua resposta):</label>
+            <input type="number" id="current" placeholder="Digite sua resposta">
+            
+            <button onclick="calcularLeiOhm()">Calcular</button>
+        `;
+    } 
+    else if (tipo === "lei2") {
+        formulario.innerHTML = `
+            <label for="resistivity">Resistividade (Ω·m):</label>
+            <input type="number" id="resistivity" placeholder="Digite a resistividade">
+            
+            <label for="length">Comprimento (m):</label>
+            <input type="number" id="length" placeholder="Digite o comprimento">
+            
+            <label for="area">Área (m²):</label>
+            <input type="number" id="area" placeholder="Digite a área">
+            
+            <button onclick="calcularSegundaLei()">Calcular</button>
+        `;
+    } 
+    else if (tipo === "potencial") {
+        formulario.innerHTML = `
+            <label for="charge">Carga (Q):</label>
+            <input type="number" id="charge" placeholder="Digite a carga">
+            
+            <label for="distance">Distância (m):</label>
+            <input type="number" id="distance" placeholder="Digite a distância">
+            
+            <button onclick="calcularPotencial()">Calcular</button>
+        `;
+    }
+}
+
+function calcularLeiOhm() {
+    let voltage = parseFloat(document.getElementById("voltage").value);
+    let resistance = parseFloat(document.getElementById("resistance").value);
+    let userCurrent = parseFloat(document.getElementById("current").value);
+    let resultado = document.getElementById("resultado");
+
+    if (isNaN(voltage) || isNaN(resistance) || isNaN(userCurrent)) {
+        resultado.innerHTML = "❌ Preencha todos os campos!";
+        return;
+    }
+
+    if (resistance === 0) {
+        resultado.innerHTML = "🔥 Curto-circuito detectado! (R = 0)";
+        document.body.style.backgroundColor = "red";
+        return;
+    }
+
+    let correctCurrent = voltage / resistance;
+    let errorMargin = Math.abs(correctCurrent - userCurrent);
+
+    if (errorMargin === 0) {
+        resultado.innerHTML = "✅ Correto! O circuito está funcionando!";
+    } else if (errorMargin < 0.5) {
+        resultado.innerHTML = "⚠ Erro pequeno! Tente ajustar o valor.";
+    } else {
+        resultado.innerHTML = "❌ Erro grande! Revise a fórmula.";
+    }
+}
+
+function calcularSegundaLei() {
+    let resistivity = parseFloat(document.getElementById("resistivity").value);
+    let length = parseFloat(document.getElementById("length").value);
+    let area = parseFloat(document.getElementById("area").value);
+    let resultado = document.getElementById("resultado");
+
+    if (isNaN(resistivity) || isNaN(length) || isNaN(area)) {
+        resultado.innerHTML = "❌ Preencha todos os campos!";
+        return;
+    }
+
+    let resistance = resistivity * (length / area);
+    resultado.innerHTML = `🧪 A resistência calculada é <b>${resistance.toFixed(2)} Ω</b>`;
+}
+
+function calcularPotencial() {
+    let charge = parseFloat(document.getElementById("charge").value);
+    let distance = parseFloat(document.getElementById("distance").value);
+    let resultado = document.getElementById("resultado");
+    const k = 8.99e9; // Constante de Coulomb
+
+    if (isNaN(charge) || isNaN(distance) || distance === 0) {
+        resultado.innerHTML = "❌ Preencha os campos corretamente!";
+        return;
+    }
+
+    let potential = k * (charge / distance);
+    resultado.innerHTML = `⚡ O potencial elétrico é <b>${potential.toExponential(2)} V</b>`;
+}
+</script>
+</html>

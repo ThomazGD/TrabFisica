@@ -112,6 +112,7 @@
             
             <label for="calculo">Escolha um cálculo:</label>
             <select id="calculo" onchange="mostrarFormulario()">
+                <option value="selecione">Escolha seu cálculo:</option>
                 <option value="lei1">Primeira Lei de Ohm (V = I × R)</option>
                 <option value="lei2">Segunda Lei de Ohm (R = ρ × L / A)</option>
                 <option value="potencial">Cálculo do Potencial Elétrico</option>
@@ -145,9 +146,20 @@
     function mostrarFormulario() {
     let tipo = document.getElementById("calculo").value;
     let formulario = document.getElementById("formulario");
+    let opcaoSelecione = document.querySelector("#calculo option[value='selecione']");
+    
+    if (opcaoSelecione) {
+        opcaoSelecione.style.display = "none"; // Oculta apenas a opção "Selecione um cálculo"
+    }
+
+    formulario.innerHTML = ""; // Limpa o formulário ao mudar a opção
+
+    if (tipo === "selecione") {
+        return;
+    }
 
     if (tipo === "lei1") {
-        formulario.innerHTML = `
+        formulario.innerHTML += `
             <label for="voltage">Tensão (V):</label>
             <input type="number" id="voltage" placeholder="Digite a tensão">
             
@@ -161,7 +173,7 @@
         `;
     } 
     else if (tipo === "lei2") {
-        formulario.innerHTML = `
+        formulario.innerHTML += `
             <label for="resistivity">Resistividade (Ω·m):</label>
             <input type="number" id="resistivity" placeholder="Digite a resistividade">
             
@@ -175,7 +187,7 @@
         `;
     } 
     else if (tipo === "potencial") {
-        formulario.innerHTML = `
+        formulario.innerHTML += `
             <label for="charge">Carga (Q):</label>
             <input type="number" id="charge" placeholder="Digite a carga">
             
@@ -186,6 +198,9 @@
         `;
     }
 }
+
+
+
 
 function calcularLeiOhm() {
     let voltage = parseFloat(document.getElementById("voltage").value);
